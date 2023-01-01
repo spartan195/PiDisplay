@@ -413,7 +413,7 @@ GPIO.add_event_detect(JS_R_PIN, GPIO.RISING, callback=select_h, bouncetime=200)
 GPIO.add_event_detect(JS_U_PIN, GPIO.RISING, callback=select_v, bouncetime=200)
 GPIO.add_event_detect(JS_D_PIN, GPIO.RISING, callback=select_v, bouncetime=200)
 
-iface = subprocess.check_output("iwgetid | awk '{print $1}'", shell = True).rstrip("\r\n")
+#iface = subprocess.check_output("iwgetid | awk '{print $1}'", shell = True).rstrip("\r\n")
 
 # Main Loop
 try:
